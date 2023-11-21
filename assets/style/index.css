@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import "./reset.css";
+
+body {
+  background-color: #18171f;
+  color: #fff;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.alarm-clock {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-time {
+  text-align: center;
+  margin-right: 5px;
+  padding: 10px;
+  width: 80px;
+  border: none;
+  border-radius: 20px;
+  background-color: #27262d;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.alarm-btn {
+  background-color: #459b65;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.alarm-btn:hover {
+  background-color: #50b374;
+  transition: all 0.25s ease-in-out;
+}
+
+.current-time {
+  font-size: 5rem;
+}
+
+.alarm-set {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.icon {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.input-alarm {
+  margin-top: 10px;
+}
+
+.input-hour:focus,
+.input-minute:focus {
+  border: #459b65 1px solid;
+}
+
+.input-hour:invalid:focus,
+.input-minute:invalid:focus {
+  border: #ed4621 1px solid;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blinking {
+  animation: blink 1s infinite;
+}
