@@ -29,11 +29,10 @@ body {
   margin-right: 5px;
   padding: 10px;
   width: 80px;
-  border: none;
+  border:transparent 1px solid;
   border-radius: 20px;
   background-color: #27262d;
   color: #fff;
-  box-sizing: border-box;
 }
 
 .alarm-btn {
